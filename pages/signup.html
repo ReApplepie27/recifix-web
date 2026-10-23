@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <script>
+        if (window.location.search.includes("embedded")) {
+            document.documentElement.classList.add("auth-embedded");
+        }
+    </script>
+
+    <title>Create Account - Recifix</title>
+
+    <link rel="stylesheet" href="../css/account.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-background">
+
+        <iframe
+            src="../index.html"
+            title="Recifix Homepage"
+            onload="prepareAuthBackground(this)">
+        </iframe>
+
+    </div>
+
+    <div class="auth-overlay"></div>
+
+    <main class="auth-wrapper">
+
+        <section class="auth-card">
+
+            <a href="../index.html" class="auth-logo">
+
+                <img class="auth-logo-mark" src="../images/icons/leave-logo-dashboard.svg" alt="">
+
+                <span>Recifix</span>
+
+            </a>
+
+            <button
+                type="button"
+                class="auth-close"
+                onclick="closeAuth()"
+                aria-label="Close">
+                <span class="close-icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="auth-header">
+
+                <h1>
+                    Create your account
+                </h1>
+
+                <p>
+                    Start organizing your work in one calm, focused space.
+                </p>
+
+            </div>
+
+            <div class="divider">
+
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <form
+                class="auth-form"
+                method="get"
+                novalidate>
+
+                <div class="input-group">
+
+                    <label for="fullname">
+                        Full name
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon"><img src="../images/icons/user.svg" alt=""></span>
+
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="John Ivan Latosa"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label for="email">
+                        Email address
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon"><img src="../images/icons/auth-email.svg" alt=""></span>
+
+                        <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon"><img src="../images/icons/lock.svg" alt=""></span>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            required>
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            onclick="togglePassword('password', this)"
+                            aria-label="Show password">
+
+                            <img src="../images/icons/eye.svg" alt="">
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="auth-submit">
+
+                    Create account
+
+                </button>
+
+            </form>
+
+            <p class="switch-auth">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Log in
+                </a>
+
+            </p>
+
+            <p class="terms">
+
+                By continuing, you agree to our
+                <a href="#">
+                    Terms of Service
+                </a>
+                and
+                <a href="#">
+                    Privacy Policy
+                </a>.
+
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/account.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recifix - My Pantry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script>
+        if (new URLSearchParams(window.location.search).get("view") === "home") {
+            document.documentElement.classList.add("home-view");
+        }
+    </script>
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <a class="sidebar-brand" href="index.html"><span class="brand-mark"><img src="images/icons/leave-logo-dashboard.svg" alt=""></span><span><strong>Recifix</strong><small>Kitchen Assistant</small></span></a>
+            <nav class="sidebar-nav" aria-label="Main navigation">
+                <a href="dashboard.html?view=home"><img src="images/icons/home-dashboard.svg" alt="">Home</a>
+                <a href="dashboard.html?view=pantry"><img src="images/icons/my-pantry-dashboard.svg" alt="">My Pantry</a>
+                <a href="dashboard.html?view=saved"><img src="images/icons/saved-recipe-dashboard.svg" alt="">Saved Recipes</a>
+                <a href="dashboard.html?view=contact"><img class="contact-nav-icon" src="images/icons/email.svg" alt="">Contact</a>
+            </nav>
+            <div class="sidebar-note"><span aria-hidden="true"><img src="images/icons/leave-logo-dashboard.svg" alt=""></span><p>Good food<br>starts with<br>what you have.</p></div>
+        </aside>
+        <div class="dashboard-page">
+            <header class="topbar">
+                <div class="topbar-actions">
+                    <button type="button" class="theme-toggle" aria-label="Switch to dark mode" aria-pressed="false"><span aria-hidden="true"><img src="images/icons/lightmode.svg" alt=""></span></button>
+                    <button type="button" id="profileButton" class="profile-area" aria-label="Open profile menu"><span id="profileGreeting">Hi</span><span class="profile-picture" id="profileInitial">?</span></button>
+                </div>
+            </header>
+            <main class="dashboard dashboard-pantry">
+                <section class="dashboard-hero">
+                    <div><p class="eyebrow">MY PANTRY</p><h1>What's in your kitchen?</h1><p>Enter your ingredients, set your preferences, and let Recifix turn them into delicious recipes.</p></div>
+                    <div class="dashboard-strip" aria-label="Illustrated kitchen ingredients">
+                        <div class="dashboard-strip-track" aria-hidden="true">
+                            <img src="images/strip-image-dashboard.jpg" alt="">
+                            <img src="images/strip-image-dashboard.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="workspace-panel">
+                    <div class="section-heading"><img src="images/icons/enter-ingredients-dashboard.svg" alt=""><div><h2>Enter your ingredients</h2><p>Add what you already have at home.</p></div></div>
+                    <div class="ingredient-input-row"><input type="text" id="ingredientInput" placeholder="e.g. chicken, tomatoes, garlic..." autocomplete="off" list="ingredientSuggestions"><datalist id="ingredientSuggestions"></datalist><button type="button" id="addIngredient" class="add-button">Add</button></div>
+                    <div class="pantry-area"><div class="ingredient-tags" id="ingredientTags"></div><button type="button" id="clearIngredients" class="clear-button" disabled>Clear all</button></div>
+                    <div class="preference-grid" id="preferenceGrid">
+                        <div class="filter-group meal-group"><div class="filter-heading"><img src="images/icons/meal-type-dashboard.svg" alt=""><div><h2>Meal Type</h2><p>What kind of meal are you in the mood for?</p></div></div><div class="filter-options"><button type="button" class="filter-pill">Breakfast</button><button type="button" class="filter-pill">Lunch</button><button type="button" class="filter-pill">Dinner</button><button type="button" class="filter-pill">Dessert</button></div></div>
+                        <div class="filter-group"><div class="filter-heading"><img src="images/icons/taste-preference-dashboard.svg" alt=""><div><h2>Taste Preference</h2><p>Choose your preferred taste.</p></div></div><div class="filter-options"><button type="button" class="filter-pill">Spicy</button><button type="button" class="filter-pill">Savory</button><button type="button" class="filter-pill">Sweet</button><button type="button" class="filter-pill">Mild</button><button type="button" class="filter-pill">Tangy</button><button type="button" class="filter-pill">Sour</button></div></div>
+                        <div class="filter-group allergy-group"><div class="filter-heading"><img src="images/icons/allergies-dashboard.svg" alt=""><div><h2>Allergies / Restrictions</h2><p>Select what you want to avoid.</p></div></div><div class="filter-options"><button type="button" class="filter-pill">Nuts</button><button type="button" class="filter-pill">Dairy</button><button type="button" class="filter-pill">Eggs</button><button type="button" class="filter-pill">Seafood</button><button type="button" class="filter-pill">Gluten</button><button type="button" class="filter-pill">Soy</button><button type="button" class="filter-pill">Shellfish</button><button type="button" class="filter-pill">Sesame</button></div></div>
+                    </div>
+                    <button type="button" id="generateRecipe" class="generate-button" aria-controls="pantryRecipeShowcase" aria-expanded="false"><span>✦</span> Generate Recipe</button>
+                </section>
+                <section class="pantry-recipe-showcase" id="pantryRecipeShowcase" aria-labelledby="pantryRecipesTitle" hidden>
+                    <p class="pantry-note" id="pantryNote" role="status" aria-live="polite" hidden></p>
+                    <div class="pantry-suggestions-heading" id="pantrySuggestionsHeading" hidden>
+                        <span class="pantry-suggestions-icon" aria-hidden="true">✦</span>
+                        <div><h3 id="pantryRecipesTitle">Suggested Recipes</h3><p id="pantrySuggestionsSub">More ideas to explore with the ingredients you have</p></div>
+                    </div>
+                    <div class="pantry-recipe-grid" id="pantryRecipeGrid"></div>
+                    <div class="pantry-more"><button type="button" id="pantryLoadMore" class="pantry-load-more" hidden>Show more recipes</button></div>
+                </section>
+            </main>
+            <main class="dashboard dashboard-home" hidden>
+                <section class="home-dashboard-hero">
+                    <div>
+                        <p class="eyebrow">WELCOME TO RECIFIX</p>
+                        <h1>Cook with what you have.</h1>
+                        <p>Turn the ingredients in your kitchen into simple, delicious recipes with less searching and less waste.</p>
+                        <a class="home-dashboard-action" href="dashboard.html?view=pantry">Open My Pantry</a>
+                    </div>
+                    <img src="images/intro-image.jpg" alt="Hands preparing ingredients in a kitchen">
+                </section>
+                <!--  DYNAMIC MACHINE LEARNING RECOMMENDATIONS ON HOME SCREEN -->
+                <section class="home-dashboard-section ml-recommendations-section">
+                    <div class="home-dashboard-heading">
+                        <p class="eyebrow">✦ SMART SUGGESTIONS</p>
+                        <h2>Recommended For You Today</h2>
+                        <p>Based on your recent saved recipes.</p>
+                    </div>
+                    
+                    <!--  CHANGE THIS INNER CLASS NAME HERE -->
+                        <div class="pantry-recipe-grid" id="homeRecipeRecommendationsGrid">
+                        <div class="loading-state" style="padding: 20px; text-align: center; color: #888;">
+                             Querying recommendation engine patterns...
+                        </div>
+                    </div>
+                </section>
+                <section class="home-dashboard-section">
+                    <div class="home-dashboard-heading"><p class="eyebrow">WHAT RECIFIX CAN DO</p><h2>Engineered for home cooks</h2><p>Cook with confidence using tools built around what you already have.</p></div>
+                    <div class="home-feature-grid">
+                        <article><img src="images/icons/ingredient-based.svg" alt=""><h3>Ingredient-Based Recipes</h3><p>Enter what you have and discover recipes you can make right now.</p></article>
+                        <article><img src="images/icons/easy-recipe-generator.svg" alt=""><h3>Easy Recipe Generator</h3><p>Get ideas fast without browsing endlessly for what to cook.</p></article>
+                        <article><img src="images/icons/exact-ingredients-and-quantities.svg" alt=""><h3>Exact Ingredients & Quantities</h3><p>See every ingredient and the amount you need.</p></article>
+                        <article><img src="images/icons/taste-preferences.svg" alt=""><h3>Taste Preferences</h3><p>Choose your taste and find recipes that match your mood.</p></article>
+                        <article><img src="images/icons/saved-recipe.svg" alt=""><h3>Save Your Recipes</h3><p>Keep favorites ready to cook again.</p></article>
+                        <article><img src="images/icons/step-by-step-cooking.svg" alt=""><h3>Step-by-Step Cooking</h3><p>Follow clear steps from preparation to serving.</p></article>
+                    </div>
+                </section>
+                <section class="home-dashboard-section home-how-it-works">
+                    <div class="home-dashboard-heading"><p class="eyebrow">HOW RECIFIX WORKS</p><h2>From ingredients to dinner.</h2><p>Three simple steps to get a recipe ready to cook.</p></div>
+                    <div class="home-steps"><article><strong>01</strong><span class="home-step-icon"><img src="images/icons/add-ingredients.svg" alt=""></span><h3>Add Ingredients</h3><p>Tell Recifix what you already have.</p></article><article><strong>02</strong><span class="home-step-icon"><img src="images/icons/set-preferences.svg" alt=""></span><h3>Set Preferences</h3><p>Choose taste and restrictions.</p></article><article><strong>03</strong><span class="home-step-icon"><img src="images/icons/get-recipe.svg" alt=""></span><h3>Get Your Recipe</h3><p>Cook with a recipe made for you.</p></article></div>
+                    <div class="home-benefits-heading"><p class="eyebrow">WHY IT FEELS EASIER</p><h2>Less searching. More cooking.</h2></div>
+                    <div class="home-benefits"><article><span><img src="images/icons/quick-meals.svg" alt=""></span><div><h3>Quick Meals</h3><p>Find meals that fit your schedule, from quick snacks to full dishes.</p><strong>15-30 MIN</strong></div></article><article><span><img src="images/icons/simple-instructions.svg" alt=""></span><div><h3>Simple Instructions</h3><p>Follow clear steps from preparation to serving without confusion.</p><strong>STEP BY STEP</strong></div></article><article><span><img src="images/icons/less-waste.svg" alt=""></span><div><h3>Less Waste</h3><p>Use the ingredients already in your kitchen instead of letting them go unused.</p><strong>USE WHAT YOU HAVE</strong></div></article></div>
+                </section>
+            </main>
+            <main class="dashboard dashboard-saved" hidden>
+                <section class="saved-recipes-hero">
+                    <div>
+                        <p class="eyebrow">YOUR COOKING COLLECTION</p>
+                        <h1>Saved for your next craving.</h1>
+                        <p>Keep your favorite ideas close, ready whenever inspiration strikes.</p>
+                    </div>
+                    <div class="saved-recipes-count"><strong>0</strong><span>recipes saved</span></div>
+                </section>
+                <section class="saved-recipes-panel">
+                    <div class="saved-recipes-heading"><div><p class="eyebrow">YOUR FAVORITES</p><h2>Recipes worth coming back to</h2></div><div class="saved-recipe-filters"><button type="button" class="saved-filter active">All recipes</button></div></div>
+                    <div class="saved-recipe-grid" id="savedRecipeGrid"></div>
+                </section>
+            </main>
+            <main class="dashboard-contact" id="contact" hidden>
+                <section class="dashboard-contact-heading">
+                    <div>
+                        <p class="eyebrow">RECIFIX SUPPORT</p>
+                        <h1>Good food starts with a conversation.</h1>
+                        <p>Questions about Recifix, recipe ideas, or a thought you want to share? We would love to hear from you.</p>
+                    </div>
+                    <div class="dashboard-contact-note"><span>FROM OUR KITCHEN</span><strong>Here to help you cook with what you have.</strong></div>
+                </section>
+                <div class="dashboard-contact-content">
+                    <aside class="dashboard-contact-details" aria-label="Contact details">
+                        <p class="eyebrow">REACH OUT</p>
+                        <h2>We are all ears.</h2>
+                        <p class="dashboard-contact-intro">A real person will be glad to hear from you.</p>
+                        <div class="dashboard-contact-detail">
+                            <span class="dashboard-contact-detail-icon"><img src="images/icons/email.svg" alt=""></span>
+                            <span><small>Email us</small><strong>recifixadmin@gmail.com</strong></span>
+                        </div>
+                        <div class="dashboard-contact-detail">
+                            <span class="dashboard-contact-detail-icon"><img src="images/icons/telephone.svg" alt=""></span>
+                            <span><small>Call us</small><strong>+63 916 414 4023</strong></span>
+                        </div>
+                        <div class="dashboard-contact-hours"><span>SUPPORT HOURS</span><strong>Monday-Friday, 9:00 AM-5:00 PM</strong></div>
+                    </aside>
+                    <section class="dashboard-contact-form-section" aria-labelledby="dashboardContactTitle">
+                        <div class="dashboard-contact-form-heading">
+                            <p class="eyebrow">SEND A NOTE</p>
+                            <h2 id="dashboardContactTitle">What’s on your mind?</h2>
+                            <p>Leave a few details and we’ll take it from there.</p>
+                        </div>
+                        <div class="dashboard-contact-form">
+                            <div class="dashboard-contact-form-row">
+                                <label for="dashboardContactName">Name<input type="text" id="dashboardContactName" placeholder="Your name" autocomplete="name"></label>
+                                <label for="dashboardContactEmail">Email<input type="email" id="dashboardContactEmail" placeholder="you@example.com" autocomplete="email"></label>
+                            </div>
+                            <label for="dashboardContactMessage">Message<textarea id="dashboardContactMessage" placeholder="How can we help?" rows="5"></textarea></label>
+                            <div class="dashboard-contact-form-actions">
+                                <p>We’ll get back to you within 1-2 business days.</p>
+                                <button type="button">Send message <span aria-hidden="true">&#8594;</span></button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <footer class="dashboard-footer" id="site-footer" aria-label="Site footer">
+                <div><strong>Recifix</strong><span>kitchen assistant</span></div>
+                <p>© 2026 Recifix. Cook smarter, waste less.</p>
+            </footer>
+        </div>
+    </div>
+    <div class="recipe-modal" id="adoboRecipeModal" aria-hidden="true">
+        <div class="recipe-dialog" role="dialog" aria-modal="true" aria-labelledby="adoboRecipeTitle">
+            <button type="button" class="recipe-modal-close" id="closeAdoboRecipe" aria-label="Close recipe details">&times;</button>
+            <div class="recipe-dialog-hero">
+                <img src="images/adobo.jpg" alt="Chicken adobo with rice and herbs">
+                <div>
+                    <div class="pantry-recipe-tags"><span class="recipe-meal-main">Main Course</span><span class="recipe-taste-savory">Savory</span></div>
+                    <h2 id="adoboRecipeTitle">Chicken Adobo</h2>
+                    <p>A rich and savory Filipino favorite with tender chicken in a soy-vinegar sauce.</p>
+                    <div class="recipe-dialog-meta"><span><img src="images/icons/recipe-prep.svg" alt="">Prep <strong>10 min</strong></span><span><img src="images/icons/recipe-cook.svg" alt="">Cook <strong>35 min</strong></span><span><img src="images/icons/recipe-servings.svg" alt="">Serves <strong>4</strong></span><span><img src="images/icons/recipe-difficulty.svg" alt="">Easy <i class="difficulty-bars easy" aria-label="Easy difficulty"><b></b><b></b><b></b></i></span></div>
+                </div>
+            </div>
+            <div class="recipe-dialog-body">
+                <section aria-labelledby="adoboIngredientsTitle">
+                    <p class="recipe-dialog-kicker">WHAT YOU NEED</p>
+                    <h3 id="adoboIngredientsTitle">Ingredients</h3>
+                    <ul class="recipe-dialog-ingredients">
+                        <li>500 g chicken thighs</li>
+                        <li>60 ml soy sauce</li>
+                        <li>60 ml vinegar</li>
+                        <li>4 garlic cloves, crushed</li>
+                        <li>2 bay leaves</li>
+                        <li>1 small onion, sliced</li>
+                        <li>1 tsp black peppercorns</li>
+                        <li>120 ml water</li>
+                        <li>1 tbsp cooking oil</li>
+                    </ul>
+                </section>
+                <section aria-labelledby="adoboStepsTitle">
+                    <p class="recipe-dialog-kicker">FROM PREP TO PLATE</p>
+                    <h3 id="adoboStepsTitle">Steps</h3>
+                    <ol class="recipe-dialog-steps">
+                        <li><strong>Marinate.</strong> Combine the chicken, soy sauce, garlic, and peppercorns. Rest for 15 minutes.</li>
+                        <li><strong>Sear.</strong> Heat the oil and brown the chicken on both sides.</li>
+                        <li><strong>Simmer.</strong> Add the marinade, vinegar, bay leaves, onion, and water. Simmer for 25 minutes.</li>
+                        <li><strong>Finish.</strong> Reduce the sauce until glossy, then serve hot with rice.</li>
+                    </ol>
+                </section>
+                <section class="recipe-dialog-allergens" id="recipeAllergens" aria-labelledby="recipeAllergensTitle">
+                    <p class="recipe-dialog-kicker">GOOD TO KNOW</p>
+                    <h3 id="recipeAllergensTitle">Allergen information</h3>
+                    <div id="recipeAllergensBody"></div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="logout-modal" id="logoutModal" aria-hidden="true">
+        <div class="logout-dialog account-dialog" role="dialog" aria-modal="true" aria-labelledby="accountTitle">
+            <button type="button" class="close-logout" id="closeLogout" aria-label="Close account menu"><span class="close-icon" aria-hidden="true"></span></button>
+            <span class="logout-kicker">YOUR ACCOUNT</span>
+            <div class="account-heading">
+                <span class="account-avatar" id="accountAvatar">?</span>
+                <div><h2 id="accountTitle">Your account</h2><p id="accountEmail">Email not set</p></div>
+            </div>
+            <div class="account-links" aria-label="Account shortcuts">
+                <button type="button" class="account-link" id="openAccountSettings"><span><strong>Account Settings</strong><small>Review your account details</small></span><span class="account-link-arrow" aria-hidden="true"></span></button>
+                <button type="button" class="account-link" id="openChangePassword"><span><strong>Change password</strong><small>Update your account password</small></span><span class="account-link-arrow" aria-hidden="true"></span></button>
+            </div>
+            <form class="account-settings" id="accountSettingsForm" hidden>
+                <label for="accountNameInput">Full name</label>
+                <input type="text" id="accountNameInput" name="accountName" placeholder="Your Name">
+                <label for="accountEmailInput">Email address</label>
+                <input type="text" id="accountEmailInput" name="accountEmail" placeholder="you@gmail.com">
+                <div class="account-settings-actions"><button type="button" class="cancel-logout" id="cancelAccountSettings">Cancel</button><button type="button" class="confirm-logout">Save changes</button></div>
+            </form>
+            <form class="account-settings change-password-form" id="changePasswordForm" hidden>
+                <label for="dashboardCurrentPassword">Current password</label>
+                <div class="dashboard-password-field"><input type="password" id="dashboardCurrentPassword" required><button type="button" class="dashboard-password-toggle" onclick="toggleDashboardPassword('dashboardCurrentPassword', this)" aria-label="Show password"><img src="images/icons/eye.svg" alt=""></button></div>
+                <label for="dashboardNewPassword">New password</label>
+                <div class="dashboard-password-field"><input type="password" id="dashboardNewPassword" minlength="8" required><button type="button" class="dashboard-password-toggle" onclick="toggleDashboardPassword('dashboardNewPassword', this)" aria-label="Show password"><img src="images/icons/eye.svg" alt=""></button></div>
+                <label for="dashboardConfirmPassword">Confirm new password</label>
+                <div class="dashboard-password-field"><input type="password" id="dashboardConfirmPassword" minlength="8" required><button type="button" class="dashboard-password-toggle" onclick="toggleDashboardPassword('dashboardConfirmPassword', this)" aria-label="Show password"><img src="images/icons/eye.svg" alt=""></button></div>
+                <p class="account-settings-message" id="changePasswordMessage" role="status"></p>
+                <div class="account-settings-actions"><button type="button" class="cancel-logout" id="cancelChangePassword">Cancel</button><button type="button" class="confirm-logout">Save password</button></div>
+            </form>
+            <div class="logout-actions"><button type="button" class="cancel-logout" id="cancelLogout">Close</button><button type="button" class="confirm-logout" id="confirmLogout">Log out</button></div>
+        </div>
+    </div>
+    <script src="js/api.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/recipes.js"></script>
+</body>
+</html>

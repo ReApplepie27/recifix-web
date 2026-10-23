@@ -1,0 +1,257 @@
+RECIFIX RECIPE IMPORT REPORT
+============================================================
+
+recipes read: 514
+ingredient lines: 4822
+steps: 3052
+recipes with image: 514
+allergens unverified: 0
+inserted: 0
+updated: 514
+
+ALLERGENS CELL EMPTY (recipe is marked UNVERIFIED and hidden from allergen-filtered searches)  [0]
+------------------------------------------------------------
+  none
+
+ALLERGEN CHECK: ingredients suggest an allergen the sheet does not list (treated as 'may contain')  [176]
+------------------------------------------------------------
+  Pork Giniling: sheet says 'Soy' but ingredients suggest: wheat (from '1 tbsp soy sauce')
+  Pork Humba: sheet says 'Soy' but ingredients suggest: wheat (from '1/4 cup soy sauce')
+  Grilled Liempo: sheet says 'Soy' but ingredients suggest: wheat (from '1/4 cup soy sauce')
+  Bicol Express: sheet says 'Shellfish' but ingredients suggest: coconut (from '1 cups coconut milk')
+  Ginataang Tilapia: sheet says 'Fish' but ingredients suggest: coconut (from '1 cups coconut milk')
+  Adobong Pusit: sheet says 'Shellfish/Mollusk, Soy' but ingredients suggest: wheat (from '1/4 cup soy sauce')
+  Bistek Tagalog: sheet says 'Soy' but ingredients suggest: wheat (from '1/4 cup soy sauce')
+  Beef Kulma: sheet says 'None of the common allergens' but ingredients suggest: coconut (from '1 cups coconut milk')
+  Arroz Ala Cubana: sheet says 'Egg, Soy' but ingredients suggest: wheat (from '1 1/2 tbsp soy sauce')
+  Chicken Adobo: sheet says 'Soy' but ingredients suggest: wheat (from '1/4 cup soy sauce')
+  Chicken Barbecue: sheet says 'Soy' but ingredients suggest: wheat (from '1/4 cup soy sauce')
+  Adobong Talong (Eggplant Adobo): sheet says 'Soy' but ingredients suggest: wheat (from '2 tbsp soy sauce')
+  Siopao Asado: sheet says 'Gluten, Soy' but ingredients suggest: mollusk (from '1 tbsp oyster sauce')
+  Beef Kebab: sheet says 'Soy' but ingredients suggest: wheat (from '2 tbsp soy sauce')
+  Chicken Curry: sheet says 'Fish' but ingredients suggest: coconut (from '1 cup coconut milk')
+  Chop Suey: sheet says 'Soy' but ingredients suggest: mollusk (from '1 tbsp oyster sauce'); wheat (from '1 tbsp oyster sauce')
+  Pork Steak (Pork Chop Steak): sheet says 'Soy' but ingredients suggest: wheat (from '3 tbsp soy sauce')
+  Yang Chow Fried Rice: sheet says 'Egg, Shellfish, Soy' but ingredients suggest: wheat (from '1 tbsp soy sauce')
+  Beef Morcon: sheet says 'Egg, Soy' but ingredients suggest: wheat (from '2 tbsp soy sauce')
+  Arroz Valenciana: sheet says 'None of the common allergens' but ingredients suggest: coconut (from '1 cup coconut milk')
+  Ginataang Talong with Malunggay and Tofu: sheet says 'Soy' but ingredients suggest: coconut (from '1 cup coconut milk')
+  Paksiw na Pata: sheet says 'Soy' but ingredients suggest: wheat (from '1/3 cup soy sauce')
+  Pinaputok na Tilapia: sheet says 'Fish, Soy, and Dairy' but ingredients suggest: wheat (from 'Soy sauce, to taste')
+  Tortang Tahong: sheet says 'Shellfish, Eggs, and Soy' but ingredients suggest: mollusk (from '1/2 cup mussel meat, cooked and removed from shell'); wheat (from '1 tbsp oyster sauce')
+  Nilagang Pasko: sheet says 'Fish' but ingredients suggest: soy (from '1/2 Maggi chicken cube')
+  Adobong Sitaw: sheet says 'Soy' but ingredients suggest: wheat (from '1/4 cup soy sauce')
+  Adobong Baboy: sheet says 'Soy' but ingredients suggest: wheat (from '¼ cup soy sauce')
+  Adobong Manok sa Gata: sheet says 'Soy' but ingredients suggest: coconut (from '1 cup coconut milk'); wheat (from '2 tablespoons soy sauce')
+  Adobong Baka: sheet says 'Soy' but ingredients suggest: wheat (from '2 tablespoons soy sauce')
+  Adobong Pata: sheet says 'soy' but ingredients suggest: wheat (from '2 1/2 tablespoons soy sauce')
+  Adobong Isaw: sheet says 'soy' but ingredients suggest: mollusk (from '4–6 medium-sized squid'); wheat (from '1/2 cup soy sauce')
+  Adobong Hipon: sheet says 'Shellfish, Soy' but ingredients suggest: mollusk (from '1 tablespoon oyster sauce'); wheat (from '1 1/2 tablespoons soy sauce')
+  Adobong Pugita: sheet says 'Shellfish' but ingredients suggest: mollusk (from '½ kilo octopus, cleaned and cut into bite-sized pieces'); soy (from '1 pack (30 g) SARSAYA® Oyster Sauce'); wheat (from '1 pack (30 g) SARSAYA® Oyster Sauce')
+  Adobong Tahong: sheet says 'Shellfish, Soy' but ingredients suggest: mollusk (from '1 pound mussels (tahong), cleaned and shelled'); wheat (from '3 tablespoons soy sauce')
+  Adobong Tokwa: sheet says 'Soy' but ingredients suggest: mollusk (from '1/2 Oyster Sauce 30g'); wheat (from '1/2 Oyster Sauce 30g')
+  Adobong Kangkong: sheet says 'Soy' but ingredients suggest: wheat (from '2 tablespoons soy sauce')
+  Adobong Kuhol: sheet says 'Soy' but ingredients suggest: mollusk (from '1 kilogram snails (kuhol)'); wheat (from '2 tablespoons soy sauce')
+  Adobong Baboy at Itlog: sheet says 'Soy, Egg' but ingredients suggest: wheat (from '2 tablespoons soy sauce')
+  Adobong Manok at Baboy: sheet says 'Soy' but ingredients suggest: wheat (from '3 tablespoons soy sauce')
+  Adobong Balut: sheet says 'Egg, Soy' but ingredients suggest: wheat (from '1/4 cup soy sauce')
+  Pork Adobo Flakes: sheet says 'Soy' but ingredients suggest: wheat (from '1/2 tablespoon soy sauce or Worcestershire sauce')
+  Sisig: sheet says 'Eggs, Soy' but ingredients suggest: milk (from '1/4 cup butter'); wheat (from '2 tablespoons soy sauce')
+  Crispy Pata: sheet says 'Soy' but ingredients suggest: wheat (from '2 tablespoons soy sauce')
+  Pata Tim: sheet says 'Soy' but ingredients suggest: sesame (from '1/2 teaspoon sesame oil'); wheat (from '2 tablespoons soy sauce')
+  Pork Hamonado: sheet says 'Soy' but ingredients suggest: wheat (from '2 tablespoons soy sauce')
+  Pork Estofado: sheet says 'Soy' but ingredients suggest: wheat (from '2 tablespoons soy sauce')
+  Pork Barbecue: sheet says 'soy' but ingredients suggest: wheat (from '2 tablespoons soy sauce')
+  Igado: sheet says 'Soy' but ingredients suggest: wheat (from '3 tbsp soy sauce')
+  Bopis: sheet says 'None' but ingredients suggest: fish (from 'Fish sauce, to taste')
+  Soup Number Five: sheet says 'None' but ingredients suggest: fish (from 'Fish sauce and black pepper')
+  Cochinillo Asado (Roasted Suckling Pig): sheet says 'None' but ingredients suggest: milk (from '2 tbsp butter or pork lard, plus 2 tsp')
+  Tokwa't Baboy: sheet says 'Soy' but ingredients suggest: wheat (from '2 tbsp soy sauce')
+  Beef Broccoli: sheet says 'Soy, Wheat, Shellfish' but ingredients suggest: mollusk (from '2 tbsp oyster sauce'); sesame (from '1 tsp sesame oil')
+  Ampalaya con Carne: sheet says 'Soy, Wheat, Shellfish' but ingredients suggest: mollusk (from '2 tbsp oyster sauce')
+  Chicken Inasal: sheet says 'None' but ingredients suggest: coconut (from '1/4 cup coconut vinegar'); milk (from '1 tbsp butter')
+  Pinaupong Manok: sheet says 'None' but ingredients suggest: fish (from '2 tbsp fish sauce (for dip)')
+  Pritong Tilapia: sheet says 'Fish' but ingredients suggest: soy (from '3 tbsp soy sauce'); wheat (from '3 tbsp soy sauce')
+  Pritong Hito: sheet says 'Fish' but ingredients suggest: soy (from '3 tbsp soy sauce'); wheat (from '3 tbsp soy sauce')
+  Inihaw na Pusit: sheet says 'Shellfish, Soy, Wheat' but ingredients suggest: mollusk (from '4-6 medium-sized squid, cleaned')
+  Rellenong Pusit: sheet says 'Shellfish, Egg, Wheat, Soy' but ingredients suggest: mollusk (from '2 pieces large squid, cleaned (bodies and tentacles)')
+  Calamares: sheet says 'Shellfish, Egg, Wheat' but ingredients suggest: mollusk (from '4-6 medium-sized squid, cleaned and cut into rings')
+  Ginataang Pusit: sheet says 'Shellfish, Fish, Coconut' but ingredients suggest: mollusk (from '4-6 medium-sized squid, cleaned and cut into rings')
+  Tinolang Tahong: sheet says 'Shellfish, Fish' but ingredients suggest: mollusk (from '1/2 pound mussels (tahong), cleaned')
+  Sinigang na Tahong: sheet says 'Shellfish, Fish' but ingredients suggest: mollusk (from '1 1/3 cups mussels (tahong) with shells, cleaned')
+  Steamed Tahong: sheet says 'Shellfish, Milk' but ingredients suggest: mollusk (from '½ kilo fresh mussels, cleaned')
+  Kinilaw na Talaba: sheet says 'Shellfish' but ingredients suggest: coconut (from '3/4 cup vinegar, sukang tuba, or coconut vinegar'); mollusk (from '1 kilogram oysters (talaba)')
+  Tinapang Bangus: sheet says 'Fish' but ingredients suggest: egg (from 'Salted egg')
+  Tinapa Fried Rice: sheet says 'Fish, Eggs, Soy' but ingredients suggest: wheat (from '1 tablespoon soy sauce')
+  Tinapa Flakes, Salted Duck Egg and Tomato: sheet says 'Fish, Eggs, Soy' but ingredients suggest: wheat (from '1 teaspoon soy sauce')
+  Fried Dried Squid: sheet says 'Shellfish' but ingredients suggest: mollusk (from '12 pieces medium dried squid')
+  Sinigang na Lapu-Lapu: sheet says 'Fish' but ingredients suggest: soy (from '1/2 pack (10 g) Knorr Sinigang sa Sampalok Mix Original')
+  Sinigang na Baka: sheet says 'Fish' but ingredients suggest: soy (from '25 grams MAGGI® Magic Sinigang sa Sampaloc')
+  Sinigang sa Miso: sheet says 'Fish, Soy' but ingredients suggest: mustard (from '1/2 bunch mustasa (mustard leaves)')
+  Sinigang na Isda: sheet says 'Fish' but ingredients suggest: soy (from '20 grams Knorr Sinigang sa Sampaloc Mix Original')
+  Sinigang na Tadyang ng Baka: sheet says 'Fish' but ingredients suggest: soy (from '20 grams Knorr Sinigang sa Sampaloc Mix Original')
+  Sinigang na Baby Back Ribs: sheet says 'Fish' but ingredients suggest: soy (from '1/2 packet Knorr Sinigang sa Sampaloc with Gabi (about 18 g)')
+  Betamax: sheet says 'Soy, Fish' but ingredients suggest: wheat (from '2 tablespoons soy sauce')
+  Grilled Tuna Panga: sheet says 'Fish, Soy' but ingredients suggest: wheat (from '1/2 cup soy sauce')
+  Tuna Sisig: sheet says 'Fish, Soy, Milk (if using butter or margarine)' but ingredients suggest: wheat (from '1 tablespoon soy sauce')
+  Tortang Dulong: sheet says 'Fish, Egg' but ingredients suggest: soy (from '1/2 sachet (4 g) MAGGI® Magic Sarap®')
+  Ginataang Kuhol: sheet says 'Shellfish, Coconut' but ingredients suggest: mollusk (from '1/4 kilogram kuhol (apple snails), cleaned and shelled')
+  Burong Mustasa: sheet says 'None' but ingredients suggest: mustard (from '1/2 kilogram fresh mustard greens (mustasa)')
+  Taba ng Talangka: sheet says 'Shellfish, Fish, Eggs' but ingredients suggest: mollusk (from '1/4 cup squid rings')
+  Tinumok: sheet says 'Shellfish, Fish' but ingredients suggest: coconut (from '1 cup chopped buko meat')
+  Kinunot na Isda: sheet says 'Fish' but ingredients suggest: coconut (from '1 cup coconut milk (240 ml)')
+  Pinangat na Dulong sa Gata: sheet says 'Fish, Eggs, Wheat, Shellfish' but ingredients suggest: coconut (from '2 cups coconut milk (480 ml)')
+  Relyenong Talong: sheet says 'Eggs, Soy' but ingredients suggest: wheat (from '2 tbsp soy sauce')
+  Ginisang Ampalaya: sheet says 'Egg' but ingredients suggest: soy (from '2–3 grams MAGGI® Magic Sarap®')
+  Pata at Hipon sa Gata na May Monggo at Langka: sheet says 'Shellfish' but ingredients suggest: coconut (from '2 cups coconut milk (480 ml)')
+  Ginisang Togue: sheet says 'Shellfish, Soy' but ingredients suggest: mollusk (from '1 tablespoon oyster sauce'); wheat (from '1 tablespoon oyster sauce')
+  Ginataang Sitaw at Kalabasa: sheet says 'Pork, Coconut, Fish' but ingredients suggest: soy (from '1 Knorr Pork Cube')
+  Ginataang Langka: sheet says 'Fish, Coconut' but ingredients suggest: shellfish (from '1 Knorr Shrimp Cube'); soy (from '1 Knorr Shrimp Cube')
+  Ginataang Puso ng Saging: sheet says 'Pork, Shellfish, Coconut' but ingredients suggest: fish (from '2 tablespoons patis'); soy (from '1 Knorr Shrimp Cube')
+  Ginataang Gulay: sheet says 'Shellfish, Pork, Coconut' but ingredients suggest: soy (from '1 pack (45 g) Knorr Ginataang Gulay Mix')
+  Toyomansi Pork Chops: sheet says 'Soy' but ingredients suggest: wheat (from '3 tbsp soy sauce')
+  Ensaladang Itlog na Pula: sheet says 'Egg, Soy' but ingredients suggest: wheat (from '1/2 teaspoon soy sauce')
+  Gising-Gising: sheet says 'Coconut' but ingredients suggest: shellfish (from '1 tsp bagoong alamang')
+  Rellenong Talong: sheet says 'Egg' but ingredients suggest: soy (from '1 tsp soy sauce'); wheat (from '1 tsp soy sauce')
+  Sizzling Tofu: sheet says 'Soy, egg (mayonnaise)' but ingredients suggest: wheat (from '1 tsp soy sauce')
+  Tofu Sisig: sheet says 'Soy, egg (mayonnaise)' but ingredients suggest: wheat (from '1 tsp soy sauce')
+  Pritong Tokwa: sheet says 'Soy' but ingredients suggest: wheat (from '1 tbsp soy sauce')
+  Binakol: sheet says 'None identified in listed ingredients' but ingredients suggest: coconut (from '2 cups young coconut water'); fish (from '1 tsp fish sauce')
+  Lumpiang Gulay: sheet says 'Wheat' but ingredients suggest: fish (from '1 tsp soy sauce or fish sauce, to taste'); soy (from '1/2 cup firm tofu, diced and lightly fried (optional)')
+  Lumpiang Ubod: sheet says 'Wheat, shellfish, egg (if wrapper contains egg)' but ingredients suggest: fish (from '1 tsp fish sauce, or to taste'); peanut (from '1 tbsp peanut butter'); soy (from '1 tbsp soy sauce')
+  Lumpiang Togue: sheet says 'Wheat' but ingredients suggest: fish (from '1 tsp fish sauce, or to taste'); shellfish (from '1 tbsp dried shrimp (hibe), rinsed (optional)'); soy (from '1/2 cup firm tofu, diced and lightly fried')
+  Lumpiang Shanghai: sheet says 'Wheat, egg' but ingredients suggest: soy (from '1 tbsp soy sauce')
+  Lumpiang Hubad: sheet says 'Peanuts, soy, shellfish (if shrimp paste is used)' but ingredients suggest: wheat (from '1 tbsp soy sauce')
+  Nilagang Manok: sheet says 'None identified in listed ingredients' but ingredients suggest: fish (from '1 tsp fish sauce, optional')
+  Pancit Molo: sheet says 'Wheat, shellfish, soy, egg (depending on wrappers)' but ingredients suggest: fish (from '1 tsp fish sauce')
+  Batchoy Tagalog: sheet says 'Wheat (if noodles are used), soy (optional)' but ingredients suggest: fish (from '1 tsp fish sauce')
+  Misua: sheet says 'Wheat, soy (if soy sauce is used)' but ingredients suggest: fish (from '1 tsp fish sauce')
+  Misua with Patola: sheet says 'Wheat, soy (if soy sauce is used)' but ingredients suggest: fish (from '1 tsp fish sauce')
+  Misua at Bola-Bola: sheet says 'Wheat, egg (optional)' but ingredients suggest: fish (from '1 tsp fish sauce')
+  Sotanghon Soup: sheet says 'Soy (if soy sauce is used)' but ingredients suggest: wheat (from '100 g sotanghon noodles')
+  Hototay Soup: sheet says 'Egg, soy' but ingredients suggest: wheat (from '1 tsp soy sauce')
+  Tapsilog: sheet says 'Soy, egg' but ingredients suggest: wheat (from '1 tbsp soy sauce')
+  Bagoong Rice: sheet says 'Shellfish' but ingredients suggest: egg (from '1 egg, optional')
+  Pancit Canton: sheet says 'Wheat, shellfish, soy' but ingredients suggest: egg (from '150 g pancit canton egg noodles'); mollusk (from '1 tbsp oyster sauce')
+  Pancit Bihon: sheet says 'Shellfish, soy' but ingredients suggest: fish (from '1 tsp fish sauce, or to taste'); wheat (from '120 g dried bihon (thin rice noodles)')
+  Pancit Palabok: sheet says 'Shellfish, egg, fish' but ingredients suggest: wheat (from '150 g thin bihon rice noodles')
+  Pancit Malabon: sheet says 'Shellfish, egg, fish' but ingredients suggest: mollusk (from '1 small squid, cleaned and sliced'); wheat (from '150 g thick Pancit Malabon or palabok rice noodles')
+  Pancit Habhab: sheet says 'Wheat, soy' but ingredients suggest: mollusk (from '1 tsp oyster sauce (optional)'); shellfish (from '4 medium shrimp, peeled and deveined')
+  Pancit Sotanghon: sheet says 'Soy' but ingredients suggest: fish (from '1 tsp fish sauce, or to taste'); wheat (from '150 g dried sotanghon (glass noodles)')
+  Pancit Miki: sheet says 'Wheat, egg, soy' but ingredients suggest: mollusk (from '1 tbsp oyster sauce')
+  Pancit Guisado: sheet says 'Wheat or soy depending on noodle type, soy' but ingredients suggest: egg (from '150 g fresh miki or egg noodles'); mollusk (from '1 tbsp oyster sauce'); shellfish (from '4 small shrimp, peeled and deveined (optional)')
+  Pancit Luglug: sheet says 'Shellfish, egg, fish' but ingredients suggest: mollusk (from '1 small squid, cleaned and sliced (optional)'); wheat (from '150 g thick palabok/luglug rice noodles')
+  Pancit Estacion: sheet says 'Wheat, shellfish, soy' but ingredients suggest: fish (from '2 tbsp tinapa (smoked fish) flakes'); peanut (from 'Crushed peanuts, optional garnish')
+  Pancit Choca: sheet says 'Mollusks, fish, shellfish' but ingredients suggest: soy (from '2 tbsp soy sauce'); wheat (from '150 g sotanghon or bihon rice noodles, soaked and drained')
+  Pancit Buko: sheet says 'Soy, wheat depending on noodles' but ingredients suggest: coconut (from '1 1/2 cups young coconut meat (buko), cut into thin noodle-like strips'); fish (from '1 tsp fish sauce, or to taste'); shellfish (from '4 medium shrimp, peeled and deveined')
+  Pancit Bam-i: sheet says 'Wheat, Soy, Shellfish' but ingredients suggest: egg (from '75 g pancit canton egg noodles'); mollusk (from '1 tbsp oyster sauce')
+  Pancit Cabagan: sheet says 'Wheat, egg, soy' but ingredients suggest: fish (from '1 tsp fish sauce')
+  Pancit Chami: sheet says 'Wheat, Soy, Shellfish' but ingredients suggest: mollusk (from '1 tbsp oyster sauce')
+  Pancit Lang-Lang: sheet says 'Wheat, Soy, Shellfish' but ingredients suggest: egg (from '50 g pancit canton egg noodles'); mollusk (from '1 tbsp oyster sauce')
+  Sotanghon Guisado: sheet says 'Soy, Shellfish' but ingredients suggest: fish (from '1 tsp fish sauce, or to taste'); wheat (from '150 g sotanghon (glass noodles), soaked and drained')
+  Miki Bihon: sheet says 'Wheat, Soy, Shellfish' but ingredients suggest: mollusk (from '1 tbsp oyster sauce')
+  Isaw: sheet says 'Soy (if soy sauce is used)' but ingredients suggest: wheat (from '1 tbsp soy sauce')
+  Pork Siomai: sheet says 'Wheat, shellfish, soy' but ingredients suggest: sesame (from '1 tsp sesame oil, optional')
+  Maruya: sheet says 'Wheat' but ingredients suggest: egg (from '1 egg'); milk (from '1/4 cup water or milk')
+  Halo-Halo: sheet says 'Dairy; possible allergens depend on canned toppings' but ingredients suggest: coconut (from '1/2 cup nata de coco or kaong, drained')
+  Buko Pandan: sheet says 'Dairy; check jelly mix for additives or allergens' but ingredients suggest: coconut (from '1 cup young coconut strips, drained')
+  Buko Salad: sheet says 'Dairy; possible allergens depend on canned fruit and add-ins' but ingredients suggest: coconut (from '1 cup young coconut strips, drained')
+  Fruit Salad: sheet says 'Milk' but ingredients suggest: coconut (from '1 small jar (about 200 grams) nata de coco, drained')
+  Maja Blanca: sheet says 'Milk' but ingredients suggest: coconut (from '1 can (400 ml) coconut milk')
+  Biko: sheet says 'None' but ingredients suggest: coconut (from '2 cups coconut milk (480 ml)')
+  Bibingka: sheet says 'Eggs, Milk' but ingredients suggest: coconut (from '1 cup coconut milk (240 ml)')
+  Bibingka Galapong: sheet says 'Egg, dairy' but ingredients suggest: coconut (from '1/3 cup coconut milk')
+  Puto: sheet says 'Dairy' but ingredients suggest: coconut (from '1/2 cup coconut milk or water')
+  Puto Cheese: sheet says 'Dairy, egg' but ingredients suggest: wheat (from '1 cup all-purpose flour')
+  Kutsinta: sheet says 'Coconut; possible food-grade lye water' but ingredients suggest: wheat (from '1/2 cup all-purpose flour')
+  Yema: sheet says 'Egg, dairy' but ingredients suggest: peanut (from '1 tbsp finely chopped peanuts (optional)')
+  Turrones de Casuy: sheet says 'Tree nuts (cashew), wheat' but ingredients suggest: egg (from 'Water or beaten egg to seal')
+  Mango Tapioca: sheet says 'Dairy' but ingredients suggest: coconut (from '1/4 cup coconut milk or all-purpose cream')
+  Piaya: sheet says 'Wheat' but ingredients suggest: milk (from '2 tbsp shortening or butter')
+  Peanut Brittle: sheet says 'Peanuts' but ingredients suggest: milk (from '1 tsp butter')
+  Pili Brittle: sheet says 'Tree nuts (pili)' but ingredients suggest: milk (from '1 tsp butter')
+  Silvanas: sheet says 'Egg, dairy, tree nuts' but ingredients suggest: wheat (from '1 tbsp flour')
+  Hopia: sheet says 'Wheat, possible mung bean' but ingredients suggest: egg (from '1 egg yolk mixed with 1 tsp water'); sesame (from '1 tbsp toasted sesame seeds')
+  Hopia Ube: sheet says 'Wheat, dairy if ube filling contains milk' but ingredients suggest: egg (from '1 egg yolk mixed with 1 tsp water')
+  Hopia Mongo: sheet says 'Wheat' but ingredients suggest: egg (from '1 egg yolk mixed with 1 tsp water')
+  Machang: sheet says 'Soy, egg, sesame optional' but ingredients suggest: mollusk (from '1 tsp oyster sauce'); wheat (from '1 tbsp soy sauce')
+  Buko Juice: sheet says 'Coconut' but ingredients suggest: milk (from '1 tsp sugar or condensed milk (optional)')
+  Binungor: sheet says 'Fish paste (fish)' but ingredients suggest: mollusk (from '1/2 cup cleaned edible snails or shellfish'); shellfish (from '1 tbsp fish paste (bagoong)')
+  Pigar-Pigar: sheet says 'None of the listed major allergens' but ingredients suggest: soy (from '1 tbsp soy sauce (optional)'); wheat (from '1 tbsp soy sauce (optional)')
+  Tapang Taal: sheet says 'Soy if using soy sauce' but ingredients suggest: wheat (from '1 tbsp soy sauce (optional)')
+  Bobotu: sheet says 'Peanuts, chicken, possible egg' but ingredients suggest: coconut (from '3/4 cup coconut milk')
+  Tidtad: sheet says 'Pork blood' but ingredients suggest: fish (from '1 tbsp fish sauce')
+  Asadong Dila: sheet says 'Soy' but ingredients suggest: wheat (from '1 tbsp soy sauce')
+  Larang: sheet says 'Fish, fermented black beans (soy)' but ingredients suggest: coconut (from '1/2 cup coconut milk')
+  Binagol: sheet says 'Eggs, Milk' but ingredients suggest: coconut (from '1 small pack coconut milk (200 ml)')
+  Baye-Baye: sheet says 'None of the major common allergens listed in the recipe' but ingredients suggest: coconut (from '1/2 cup grated young coconut')
+  Shrimp Salad with Pomelo: sheet says 'Shellfish, Eggs, Mustard' but ingredients suggest: soy (from '1 teaspoon liquid seasoning, optional')
+  Sinamak: sheet says 'None of the major common allergens listed in the recipe' but ingredients suggest: coconut (from '2 cups cane vinegar or coconut vinegar (480 ml)')
+  Kare-Kareng Bagnet: sheet says 'Peanuts, Shellfish' but ingredients suggest: soy (from '1 sachet (8 g) MAGGI Magic Sarap')
+  Pesang Manok: sheet says 'None of the major common allergens listed in the recipe' but ingredients suggest: fish (from '1 tablespoon patis')
+  Bangus a la Pobre: sheet says 'Fish, Soy, Wheat, Shellfish' but ingredients suggest: mollusk (from '1 tbsp oyster sauce')
+  Ginataang Tahong: sheet says 'Shellfish' but ingredients suggest: mollusk (from '1/4 kg tahong (mussels), cleaned'); soy (from '1/2 pack Knorr Complete Recipe Mix Ginataang Gulay (about 16–17 g)')
+
+ALLERGEN NOTES THE IMPORTER DID NOT UNDERSTAND (shown to users as written)  [6]
+------------------------------------------------------------
+  Halo-Halo: note not understood: 'possible allergens depend on canned toppings'
+  Buko Pandan: note not understood: 'check jelly mix for additives or allergens'
+  Buko Salad: note not understood: 'possible allergens depend on canned fruit'
+  Buko Salad: note not understood: 'add-ins'
+  Kutsinta: note not understood: 'possible food-grade lye water'
+  Suman sa Lihiya: note not understood: 'food-grade lye water used'
+
+INGREDIENT LINES TO REVIEW  [0]
+------------------------------------------------------------
+  none
+
+LONG INGREDIENT NAMES (check these were parsed sensibly)  [8]
+------------------------------------------------------------
+  Adobong Dilaw: '- 1/2 piece pork or beef cube or 1 teaspoon beef powder'
+  Kadyos, Baboy, at Langka: '- 2–3 batuan fruits or 1 tbsp tamarind paste'
+  Java Rice: '- 1 tsp annatto oil or 1/2 tsp annatto powder mixed with oil'
+  Pancit Palabok: '- 1 tbsp annatto oil or 1 tsp annatto powder dissolved in warm water'
+  Sotanghon Guisado: '- 1 tsp annatto seeds or 1 tsp annatto water'
+  Suman sa Ibos: '- Ibos or young palm leaves woven into tubes, or banana leaves as substitute'
+  Pan de Regla: '- 1 tsp red food coloring diluted in 1 tsp water'
+  Binagol: '- 2 small heatproof bowls or clean coconut shell halves'
+
+NO BASIC TASTE FOUND  [0]
+------------------------------------------------------------
+  none
+
+NO MEAL TIME FOUND  [0]
+------------------------------------------------------------
+  none
+
+MEAL COURSE NOT UNDERSTOOD  [0]
+------------------------------------------------------------
+  none
+
+DIFFICULTY NOT UNDERSTOOD  [0]
+------------------------------------------------------------
+  none
+
+SERVINGS  [0]
+------------------------------------------------------------
+  none
+
+COOKING TIME  [0]
+------------------------------------------------------------
+  none
+
+STEPS  [0]
+------------------------------------------------------------
+  none
+
+RECIPES WITH NO IMAGE FILE  [0]
+------------------------------------------------------------
+  none
+
+IMAGE FILES THAT MATCH NO RECIPE  [0]
+------------------------------------------------------------
+  none
+
+IMAGES  [0]
+------------------------------------------------------------
+  none
